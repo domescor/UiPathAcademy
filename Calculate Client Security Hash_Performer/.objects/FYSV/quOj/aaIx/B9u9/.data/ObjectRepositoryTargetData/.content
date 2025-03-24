@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AHXp9mhU-karFJdanNy8AA" Reference="LK0QGuvYuEK_c2ORM_RTkg/B9u9a5KgE0mb8gfDr9e1Kg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/work-items" CVScreenId="eb478211-caa3-4ed5-9fd8-0a614d5d9a17" DesignTimeRectangle="1550, 953, 27, 28" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Next »' tag='A' /&gt;" Guid="b0a21f2d-f2e8-424f-9a4c-7a2f5a356b8d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5de7a39b89c7447310b092190f1c8e3c.png" xmlns="">0Eo1BZKktn0iBxc3AdTF8AA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
