@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="Sm1Fe4CnPU-Pkh0rlyxyew" Reference="LK0QGuvYuEK_c2ORM_RTkg/9rSepI-YfkOCbhIsVp6GLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="0aV4-D-Y8E-TEMZ9jGF3nA" Reference="LK0QGuvYuEK_c2ORM_RTkg/9rSepI-YfkOCbhIsVp6GLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/work-items" CVScreenId="3f7cae67-a97b-4e51-a99b-36ff39e84b4e" DesignTimeRectangle="384, 628, 15, 15" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='*' tag='I' aaname='' /&gt;" Guid="23924eec-adb3-49f0-b58b-7650eb5add49" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <TargetAnchorable.Anchors>
-        <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target CVScreenId="3f7cae67-a97b-4e51-a99b-36ff39e84b4e" DesignTimeRectangle="481, 612, 186, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='*' tag='TD' /&gt;" Guid="4d8c3239-2b50-4609-b853-6cd99f59ff8f" SearchSteps="Selector" />
-        </scg:List>
-      </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="bac50124300967c7a7e7846f8090ad14.png" xmlns="">0pG1QifiPR0ypLG75ybu_ag</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/work-items" CVScreenId="3f7cae67-a97b-4e51-a99b-36ff39e84b4e" DesignTimeRectangle="503, 505, 12, 12" DesignTimeScaleFactor="1" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='I' tableRow='{0}' /&gt;&quot;, Table_Row)]" Guid="23924eec-adb3-49f0-b58b-7650eb5add49" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9c770923f90a99dfa3203d19f52cc98a.png" xmlns="">07VXG8J4PgU-nRy-FrYBzaA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">None</x:String>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="2" Name="Table_Row" />
+    </scg:List>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>
