@@ -1,0 +1,13 @@
+﻿{
+  "Name": "France",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "A7DIgq-WTk-uvW_Osji9_w",
+  "Reference": "LK0QGuvYuEK_c2ORM_RTkg/A7DIgq-WTk-uvW_Osji9_w",
+  "ParentRef": "LK0QGuvYuEK_c2ORM_RTkg/45ljV1fRpUexHHiMZOP9xQ",
+  "Created": "2025-03-26T16:08:30.1823296Z",
+  "Updated": "2025-03-26T16:08:30.1823296Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

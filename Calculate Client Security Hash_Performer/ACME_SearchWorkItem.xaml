@@ -50,6 +50,7 @@
       <x:String>System.Activities.Runtime.Collections</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -106,23 +107,20 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ACME_SearchWorkItem" sap:VirtualizedContainerService.HintSize="1277.6666666666667,2386" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ACME_SearchWorkItem" sap:VirtualizedContainerService.HintSize="1277.6666666666667,2260" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
-      <Variable x:TypeArguments="x:String" Name="Test">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="out_CurrentWIID" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="[out_CurrentWIID]" Name="Test" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="1130,704" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a8cf2e75-9e68-4fb1-9299-0db6a893b6d2" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="1078,704" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a8cf2e75-9e68-4fb1-9299-0db6a893b6d2" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -155,7 +153,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Ho cliccto workitem&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;Ho cliccto workitem&quot;]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -163,13 +161,13 @@
         <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Edge" ContentHash="pCXU1c5itU-mIs2BlVCbWg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASJSURBVFhHvZdtbFNlFMePblYqvkYTRFyCLOrQhC9CjB80KCqaiCF80C+CRhIZClHJ3AsDt+6FjnbttIyXzRfI3NiYZIm46AcDm4XRN9a1XStu6waL2dgq2xhTTJZtj/9zy23vZltZafnwb/Pc3uf5/3ruec55LtEeZz90FRq/xWLPiwwgQipltYfHCRfWZg/lNXyMhQaac4LybYJ22ZOjfBbWZ4gyyXOEAcZJiwF+XHvM31jlubwx79fBzJw4Jc/NahnM3GkOisfZrYOZWuvw+ztODRRTCSJRJEV6NAjARJ/bxYamC2sAQFiEMCkuyXMBQDCXxGMAEAAIAKTa2wE/h8AfVwAUOcRL9f7tyQb42j2yPJUBCucC4MLrjb0fJQpgaHJm2crKzrbVDf4qHssAVc7LT0QFWJsgACHEQyllLkEfmgVtMYtdbUMnZACjbTg6wBvfhwHS9nur1Tq3EzvD+UpjrymSGWvFN7+bqeic416D25NS4tzMc1svXdtEm1sEVXgEfdKGjO8QMkC5LRAdYN3xMIBa77pGhdiWORax8khXIJI5a0mlV1CuRVAx7tW0H74OQOlfnRe07bSkpt5xzbwB7jN6LFSMrbLTJp6r7T4ZyZy17KBvStrbKDIPfOEpUADQ7paBDbnWwFMACOXAoVg5MAvA4LEpAFoimbMAMMP3MMBCvbtwDgABgIb/nr5NBqh2jSQPQFXWEQJYesAn1Hgsd+k6BPKpQgao8YwmGOCQb1oGUCsicI/RLegz5AZKsErn0skAdd7EA4QioATAvxa0G7Ufze1hU2ehDFCbaID0KACP8u5gANT9RV/GAXC/8YYBIj6CuADeVAAs2OuyS10LW2xVTfepSOasjGrfpASgxb2lTs1NASgrIZLIiwonKNsi1jT4f45kzko7EDZaaHDrbwrghaP+EMC7P/WfoE/PCso6K56t6xmMZM5K1SHb0copxypMzsBWGeCRfXEAPF8bBjjsG90ilVJuKngMXVcnH5trPiPECsqzcgmWttvFvyYXywCLTJ3zB3i5YRYAqcthnodF+OYCh8g/fek9vT2QUf/b2PLc1oFs4l5RgrnbzohnaruvAECaGysCNbEAXlO0YwZo/mNiK71zEhmO3zkfEGZVOULO4ywUGT5DsskHZjE2LV5VAqRxDvCjQR1YbPIW3FAEIgDQ28397bQDufAx2ipP4s7HB0xEhK+rNA6x8ZcBHQBICUBamGw/IyUxorRfBqj3zR+AmvsmVr3V1PfjgzqXuBu1PRX9fYnRM7Hphwvf9f8zpYJoLsCLR3uupO/rnHqyyidW1/mzZYAjnhjNKAYAAYAAQAAgABAACADE5lEACAAEAAJAqB0fdMYAwJEsdChNFsC3rpGMqAA4lK67BQB0Jx7jf4/lyOb1x/tKj50fW1phDzytt86WDjJAZZYhaWyIcM//qdL55+M66/D6VE5QJC+8JYDgqxkgUvDDAiTa7fjmMCVad0C0B+LaEXwdlF7NggN+V+PXJd5eTJcMyWvLnix89ECjUECS9vp3MjR7bXg6u/4FPqMYP5QOgtAAAAAASUVORK5CYII=" InformativeScreenshot="d3baebf7b4159cb10c1ce2ce0dbb2038.jpg" Reference="LK0QGuvYuEK_c2ORM_RTkg/lxrxSzf6nkSAPM14cKGpLA" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Dashboard' /&gt;" Title="Task Switching" Url="https://acme-*.uipath.com/*" Version="V1" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="1130,1659" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0eec19ae-1caf-43ba-9c43-39bf5e1350bc" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="1078,1533" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0eec19ae-1caf-43ba-9c43-39bf5e1350bc" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1096,1419" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1044,1293" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="Trovato" />
             </Sequence.Variables>
@@ -178,17 +176,17 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1062,1357" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1010,1231" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1060,1234" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1008,1108" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NCheckState DisplayName="Check App State '105178971'" sap:VirtualizedContainerService.HintSize="1026,1174" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0eec19ae-1caf-43ba-9c43-39bf5e1350bc" Version="V4">
+                  <uix:NCheckState DisplayName="Check App State '105178971'" sap:VirtualizedContainerService.HintSize="974,1048" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="0eec19ae-1caf-43ba-9c43-39bf5e1350bc" Version="V4">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="520,934" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,808" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="Table_Row" />
                         </Sequence.Variables>
@@ -197,37 +195,15 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,301" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                          <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,190" sap2010:WorkflowViewState.IdRef="Sequence_12">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:FindChildren Children="{x:Null}" DisplayName="Find Children 'I'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
-                                <ui:FindChildren.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="87441ee0-a3e4-4b40-8a69-9930336a5165" InformativeScreenshot="40dfb808839fd8638f0f14a47ea0c0f7" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='I' /&gt;">
-                                    <ui:Target.TimeoutMS>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:Target.TimeoutMS>
-                                    <ui:Target.WaitForReady>
-                                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                                    </ui:Target.WaitForReady>
-                                  </ui:Target>
-                                </ui:FindChildren.Target>
-                              </ui:FindChildren>
-                            </Sequence>
-                          </ui:CommentOut.Body>
-                        </ui:CommentOut>
-                        <uix:NGetAttributeGeneric x:TypeArguments="x:Int32" Attribute="tableRow" DisplayName="Get Attribute '105178971(1)'" sap:VirtualizedContainerService.HintSize="486,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[Table_Row]" ScopeIdentifier="0eec19ae-1caf-43ba-9c43-39bf5e1350bc" Version="V4">
+                        <uix:NGetAttributeGeneric x:TypeArguments="x:Int32" Attribute="tableRow" DisplayName="Get Attribute '105178971(1)'" sap:VirtualizedContainerService.HintSize="434,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[Table_Row]" ScopeIdentifier="0eec19ae-1caf-43ba-9c43-39bf5e1350bc" Version="V4">
                           <uix:NGetAttributeGeneric.Target>
-                            <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items" CVScreenId="1b1b7778-cb58-4656-bd2e-9afe43d0df77" ContentHash="_unEAbmWYkWFbvPpJQ92vQ" DesignTimeRectangle="583, 491, 156, 39" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='2' tag='TD' /&gt;" Guid="c18a254e-ffeb-4b6f-ab2d-28a4eab08216" InformativeScreenshot="ea1031386ec4e4342781de9fb36037e8.png" Reference="LK0QGuvYuEK_c2ORM_RTkg/0AUj4QQLG0-Ve0jKRQDbCA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items" CVScreenId="1b1b7778-cb58-4656-bd2e-9afe43d0df77" ContentHash="GSXTMZUzmkGOSQ2Xcaezzw" DesignTimeRectangle="578, 491, 148, 39" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' aaname='{0}' /&gt;&quot;, out_CurrentWIID)]" Guid="c18a254e-ffeb-4b6f-ab2d-28a4eab08216" ImageBase64="" InformativeScreenshot="a3244bf9279add90924295379c16c333.png" Reference="LK0QGuvYuEK_c2ORM_RTkg/0AUj4QQLG0-Ve0jKRQDbCA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                           </uix:NGetAttributeGeneric.Target>
                         </uix:NGetAttributeGeneric>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="486,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0eec19ae-1caf-43ba-9c43-39bf5e1350bc" Version="V4">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;TableRow è &quot; &amp; Table_Row.ToString()]" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0eec19ae-1caf-43ba-9c43-39bf5e1350bc" Version="V4">
                           <uix:NClick.Target>
-                            <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items" CVScreenId="3f7cae67-a97b-4e51-a99b-36ff39e84b4e" ContentHash="0aV4-D-Y8E-TEMZ9jGF3nA" DesignTimeRectangle="503, 505, 12, 12" DesignTimeScaleFactor="1" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='I' tableRow='{0}' /&gt;&quot;, Table_Row)]" Guid="23924eec-adb3-49f0-b58b-7650eb5add49" InformativeScreenshot="9c770923f90a99dfa3203d19f52cc98a.png" Reference="LK0QGuvYuEK_c2ORM_RTkg/9rSepI-YfkOCbhIsVp6GLg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items" CVScreenId="e8763cd7-801a-4588-b479-1f522f7cb01e" ContentHash="aecvSATQsEeggAG_KZR0eQ" DesignTimeRectangle="497, 500, 24, 22" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='BUTTON' /&gt;&quot;, Table_Row)]" Guid="25056c19-59d6-4c8a-a6d9-d36c4d24c098" ImageBase64="" InformativeScreenshot="968c0203eac6648f69075d4c53d56db1.png" Reference="LK0QGuvYuEK_c2ORM_RTkg/9rSepI-YfkOCbhIsVp6GLg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                           </uix:NClick.Target>
                           <uix:NClick.VerifyOptions>
                             <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -240,7 +216,7 @@
                             </uix:VerifyExecutionOptions>
                           </uix:NClick.VerifyOptions>
                         </uix:NClick>
-                        <Assign sap:VirtualizedContainerService.HintSize="486,107" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_1">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Boolean">[Trovato]</OutArgument>
                           </Assign.To>

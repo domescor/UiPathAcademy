@@ -1,0 +1,12 @@
+﻿{
+  "Name": "1.0.0",
+  "Type": "AppVersion",
+  "Id": "24XEnHDbikSeleDRZw21_w",
+  "Reference": "LK0QGuvYuEK_c2ORM_RTkg/24XEnHDbikSeleDRZw21_w",
+  "ParentRef": "LK0QGuvYuEK_c2ORM_RTkg/3cve-5PbaE-mx1BV2HQiXA",
+  "Created": "2025-03-26T16:08:29.9670335Z",
+  "Updated": "2025-03-26T16:08:29.9670335Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

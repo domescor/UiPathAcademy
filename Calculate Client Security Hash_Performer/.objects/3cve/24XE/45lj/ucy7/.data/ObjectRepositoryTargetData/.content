@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5kOAsgm7U02cIbBgCS7lzg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/work-items/104548781" CVScreenId="951a61d9-8364-4297-a647-29d91d538f2b" CvTextArea="563, 451, 61, 13" CvTextArgument="NC73296" CvType="Text" DesignTimeRectangle="563, 451, 61, 13" DesignTimeScaleFactor="1" ElementType="Text" Guid="2c1c995d-57ce-4229-9394-7986a67051c8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="951a61d9-8364-4297-a647-29d91d538f2b" CvTextArea="498, 451, 63, 13" CvTextArgument="Client ID:" CvType="Text" DesignTimeRectangle="499, 450, 61, 16" FullSelectorArgument="&lt;webctrl tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='' aaname='Client ID:' check:innerText='Client ID:' /&gt;" Guid="2a461f83-d316-492c-b9b1-c36122082f8f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEEAAAAUCAYAAADStFABAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFPSURBVFhH7ZTbDcMgDAC7U6ZpVok6TMUklTpJpczhGmEb83BI3x/1SZaaQmxzQA7ggEtAXALiEhCXgHQkXGGZJphUzOeVxiI8vuCv3vN7WM9zVVdxCzDHmieqyM9NzBBuacoWpQQzGQYX/NCiNVFArPm6hBTLJU2zUBJWCMf0UlH8slAytrrnJPB/FCIQ4YaPAcIpz+GaLEAC5zUqLAnV3JyLe+M1lickSzASRa7YbLY5klAJoBCx5q6lxt4poV30SALtuHkEhYGEJg8XpnGRUDeWRT99HYwN1Ll7NBKKo9tlW0KzkxK06E7D/M7vJQwS5YaelUCNfFVC//jXPPBh5Ca3JQyv1TclcO+djdUoCYhacBNyTQYS5LkKbuQBCSk4r8KSYATnzRttfRiFdhHljowkROocamyHhPL9VyTU12C3hP/DJSAuAXEJiEsAgDvjdd879yZvRwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="847ec2fd99b23db5544bf780f121473b.png" xmlns="">08eKZUS-TEEu9nKk78TBViQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
