@@ -36,6 +36,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "WorkItemData&StateMachine_1",
         "CurrentWIID&Sequence_37",
         "TransactionItem&StateMachine_1",
         "SystemException&StateMachine_1",
@@ -88,8 +89,10 @@
       "Path": "ACME_SearchWorkItem.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Trovato&Sequence_3",
-        "ExtractDataTable&Sequence_1"
+        "Table_Row&Sequence_8",
+        "Test&Sequence_1",
+        "ExtractDataTable&Sequence_1",
+        "Trovato&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [
         "out_CurrentWIID"
@@ -155,6 +158,30 @@
         "io_RetryNumber",
         "io_TransactionNumber",
         "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TEST.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "out_CurrentWIID&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME/ACME_ExtractWorkItemData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ClientCountry&Sequence_3",
+        "ClientName&Sequence_3",
+        "ClientID&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_WorkItemData"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

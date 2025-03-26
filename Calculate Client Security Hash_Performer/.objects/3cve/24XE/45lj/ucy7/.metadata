@@ -1,0 +1,13 @@
+﻿{
+  "Name": "NC73296",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "ucy78rTetkSgQlmDcp5J1Q",
+  "Reference": "LK0QGuvYuEK_c2ORM_RTkg/ucy78rTetkSgQlmDcp5J1Q",
+  "ParentRef": "LK0QGuvYuEK_c2ORM_RTkg/45ljV1fRpUexHHiMZOP9xQ",
+  "Created": "2025-03-26T16:08:30.0837687Z",
+  "Updated": "2025-03-26T16:08:30.0837687Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
