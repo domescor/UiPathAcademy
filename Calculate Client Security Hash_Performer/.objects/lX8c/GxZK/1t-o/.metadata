@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge: SHA1 online",
+  "Type": "Screen",
+  "Id": "1t-oGTpWX0iUy6150LkD3g",
+  "Reference": "LK0QGuvYuEK_c2ORM_RTkg/1t-oGTpWX0iUy6150LkD3g",
+  "ParentRef": "LK0QGuvYuEK_c2ORM_RTkg/GxZKLpo8pUqoSZcT68g4gw",
+  "Created": "2025-03-27T11:33:06.8154997Z",
+  "Updated": "2025-03-27T11:33:06.8154997Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
