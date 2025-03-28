@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Result HASH",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "gDecddJNEkOltEZlq6vgSA",
+  "Reference": "LK0QGuvYuEK_c2ORM_RTkg/gDecddJNEkOltEZlq6vgSA",
+  "ParentRef": "LK0QGuvYuEK_c2ORM_RTkg/1t-oGTpWX0iUy6150LkD3g",
+  "Created": "2025-03-27T11:33:07.0131721Z",
+  "Updated": "2025-03-27T11:33:07.0131721Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

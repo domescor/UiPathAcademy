@@ -111,7 +111,7 @@
       <AssemblyReference>System.Data.Common</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="876.0000000000001,739.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="1077.6666666666667,1084" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -121,14 +121,20 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
-    <ui:InvokeProcess ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Process" FolderPath="Training" sap:VirtualizedContainerService.HintSize="416,344.8" sap2010:WorkflowViewState.IdRef="InvokeProcess_1" ProcessName="CommonOpenACME" UsePackage="False">
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
+    <ui:InvokeProcess ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Process" FolderPath="Training" sap:VirtualizedContainerService.HintSize="416,343" sap2010:WorkflowViewState.IdRef="InvokeProcess_1" ProcessName="CommonOpenACME" UsePackage="False">
       <ui:InvokeProcess.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_ACMEAppPath">[in_Config("ACME_WebApplicationPath").ToString]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_OrchestratorFolderPath">[in_Config("OrchestratorQueueFolder").ToString]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_CredentialAssetName">[in_Config("ACME_CredentialName").ToString]</InArgument>
       </ui:InvokeProcess.Arguments>
     </ui:InvokeProcess>
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;ACME aperto correttamente&quot;]" />
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;ACME aperto correttamente&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SHA1_Open - Invoke Workflow File (SHA1\SHA1_Open.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SHA1\SHA1_Open.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_SHA1_Path">[in_Config("SHA1_WebApplicationPath").ToString]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;SHA1 ASSEMBLED VIVA TONY STARK&quot;]" />
   </Sequence>
 </Activity>
