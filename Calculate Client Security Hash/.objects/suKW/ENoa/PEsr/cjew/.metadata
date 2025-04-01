@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Element 'Salva password'",
+  "Type": "Element",
+  "Id": "cjewhm-BJUGCzRfuFNShFA",
+  "Reference": "fnQL-Y0kOEKyCONGxf_UUA/cjewhm-BJUGCzRfuFNShFA",
+  "ParentRef": "fnQL-Y0kOEKyCONGxf_UUA/PEsrpAS1Ykia4qJJUxctQA",
+  "Created": "2025-03-04T11:46:54.9732252Z",
+  "Updated": "2025-03-04T11:46:54.9732252Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="MlXVL-RJ9kWk87kr0C4fdw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sha1-online.com" CVScreenId="0e119d89-5b00-4c29-a3a7-3e62c61e0436" CvElementArea="1109, 416, 49, 23" CvTextArea="1118, 420, 32, 13" CvTextArgument="hash" CvType="Button" DesignTimeRectangle="1111, 417, 47, 21" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='' aaname='hash' check:text='hash' /&gt;" Guid="9e2a0f97-b3a6-4bc1-a440-c7e9d4fcfaa3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAZCAYAAACclhZ6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEiSURBVFhH7Ze7DYMwEEA9CA2l2YEJaBEFDVvQ0NAzABNQpmMMVmCErJALxj7/gPyIIuNw0pMIPp/9zoAUAh6FXzJhGEKSJJCm6SGJokioTDJMpCzL1UTXYSKEqIeLMBFd5na9HAYmcsq4yA6ZCnI2mRYwro7v4bPapwzHS5kAqChCSADNoOV0sVxgJquW8yUx9PbYo9orYC2M92XkIlY3h2LeCK3bOX+sg3mhvOPz+4zNFQIiV8k+qb3Bfhm5QAsNZcX0Dk9Yp2PKmPcUL9a2wHoY35PBbovu2iejxhV4is7J2JtfyGjg2PZj5YgM77bIneAyy80Z75BrMuo3h2ax8UGwx82v1c9l3OOUcZX/kcF/bkcDQ8ocVYSBoa48CI9kAO48+8UKfagfXwAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SHA1 online' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="f73e120c494e1f5e67720fc225addaf8.png" xmlns="">05wNSpafW7kWvb3aWv6hs1A</imageRef>
-    </TargetAnchorable>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

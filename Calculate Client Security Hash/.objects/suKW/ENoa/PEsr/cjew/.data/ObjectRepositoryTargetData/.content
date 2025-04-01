@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Jep1qWPX10af_lx9SMtuMg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/home" DesignTimeRectangle="29, 17, 320, 280" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;ctrl name='Salva password' role='alert' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Salva password' role='alert' automationid='' check:fulltext='Salva password&amp;#xD;&amp;#xA;Chiudi&amp;#xD;&amp;#xA;Microsoft Edge salverà questa password nel tuoaccount Microsoft&amp;#xD;&amp;#xA;USername: nicola.bagnera@it.ey.com&amp;#xD;&amp;#xA;password&amp;#xD;&amp;#xA;Modifica&amp;#xD;&amp;#xA;Tieni traccia di tutte le password in un&amp;apos;unica comoda posizione con lo strumento per la gestione delle password&amp;#xD;&amp;#xA;Ho capito&amp;#xD;&amp;#xA;Non ora&amp;#xD;&amp;#xA;Altre opzioni' /&gt;" Guid="d3f7760b-454c-4781-99d7-b83f395d03c4" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Salva password' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d2f93637-af36-47e3-b7d5-f6d8850d1851" CvTextArea="44, 35, 102, 16" CvTextArgument="Salva password" CvType="Text" DesignTimeRectangle="45, 31, 264, 19" FullSelectorArgument="&lt;ctrl name='Salva password' role='alert' /&gt;&lt;ctrl name='Salva password' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Salva password' role='alert' /&gt;&lt;ctrl name='Salva password' role='grouping' automationid='' check:text='Salva password' /&gt;" Guid="85b35f0e-3c12-45e7-9200-d12590e8674a" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c704c9b3e58886841fbb7650463cdd8c.png" xmlns="">0v2qwGxAkmEW6ReQGgjyLTw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

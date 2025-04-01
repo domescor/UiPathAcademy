@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryScreenData ContentHash="M8fNQs9viUyJNFx40ywnXA" Reference="LK0QGuvYuEK_c2ORM_RTkg/1t-oGTpWX0iUy6150LkD3g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryScreenData.Data>
-    <TargetApp x:Key="TargetApp" Area="1912, -8, 1936, 1048" BrowserType="Edge" ContentHash="e7zerTvkeU-3h9Znb90e-A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABmSURBVDhPrczRDYAgDIRhH5nAFdx/B1zGJTBHcqY2FNrqw5ejCfm369wblaOG9QAevwWwJD9ahgG5K8sAlnBrroBcLRzAEu5UQO6nAKQDFAoQbnIHLNMA8fOIGfB6BUh/mnkCObXdA5Q5fU2oWVYAAAAASUVORK5CYII=" Reference="LK0QGuvYuEK_c2ORM_RTkg/1t-oGTpWX0iUy6150LkD3g" Selector="&lt;html app='msedge.exe' url='http://www.sha1-*' /&gt;" Title="SHA1 online" Url="http://www.sha1-*" Version="V1">
-      <imageRef attrName="InformativeScreenshot" originalValue="a3dcb60eb874bc768cd1f8b7c8386896.jpg" xmlns="">0sdmVc_CvQ0KK1--vkcNPKQ</imageRef>
-    </TargetApp>
-  </ObjectRepositoryScreenData.Data>
-</ObjectRepositoryScreenData>

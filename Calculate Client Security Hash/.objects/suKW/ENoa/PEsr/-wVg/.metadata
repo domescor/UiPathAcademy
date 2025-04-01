@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Chiudi",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "-wVgn1f8i0a3y_EdUjxvqA",
+  "Reference": "fnQL-Y0kOEKyCONGxf_UUA/-wVgn1f8i0a3y_EdUjxvqA",
+  "ParentRef": "fnQL-Y0kOEKyCONGxf_UUA/PEsrpAS1Ykia4qJJUxctQA",
+  "Created": "2025-03-04T11:46:24.3094426Z",
+  "Updated": "2025-03-04T11:46:24.3094426Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
